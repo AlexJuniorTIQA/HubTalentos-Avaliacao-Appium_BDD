@@ -33,10 +33,7 @@ public class CadastroUsuario {
     static ExtentReports test;
 	
 	
-    @BeforeClass
-    public static void test() {
-        test = ExtentReport.setExtent("Cadastro Novo Usuario");
-    }
+   
 	@Before
 	public void Inicializa() throws Exception {
 
@@ -50,7 +47,7 @@ public class CadastroUsuario {
 	}
 	@After
 	public void Finaliza() {
-		ExtentReport.quitExtent(test);
+		
 		driver.quit();
 	}
 
@@ -58,6 +55,7 @@ public class CadastroUsuario {
 	@Test
 	public void CadastroNovoUsuarioComSucesso() throws Exception {
 		report = ExtentReport.createTest("CadastroNovoUsuarioComSucesso");
+		
 		homeScreen.clickMenu();
 		homeScreen.clickIconUser();
 		loginScreen.clickCreatNewAccount();

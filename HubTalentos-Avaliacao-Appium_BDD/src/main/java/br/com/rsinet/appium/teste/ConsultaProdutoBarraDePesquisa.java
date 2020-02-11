@@ -28,10 +28,6 @@ public class ConsultaProdutoBarraDePesquisa {
 	private ExtentTest report;
 	static ExtentReports test;
 
-	@BeforeClass
-	public static void test() {
-		test = ExtentReport.setExtent("Consulta Produto Barra de Pesquisa");
-	}
 
 	@Before
 	public void Inicializa() throws Exception {
@@ -44,7 +40,6 @@ public class ConsultaProdutoBarraDePesquisa {
 
 	@After
 	public void Finaliza() {
-		ExtentReport.quitExtent(test);
 		driver.quit();
 	}
 
