@@ -61,13 +61,7 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>5.0.0</version>
 		</dependency>
-		
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-picocontainer</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-		
+
 		<dependency>
 			<groupId>com.vimalselvam</groupId>
 			<artifactId>cucumber-extentsreport</artifactId>
